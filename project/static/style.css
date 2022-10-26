@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  font-family: Helvetica;
+  background: #f0f1f3;
+}
+
+h1 {
+  fint-size: 24;
+}
+
+.menu_header {
+  background-color: #005ff9;
+}
+
+.main_body {
+  padding: 15px;
+  background: white;
+  margin: 50px 200px 10px;
+  border: 1px solid rgba(0,16,61,.12);
+}
+
+.main_logo {
+  padding: 10px;
+}
+
+.submit_question {
+  padding: 15px;
+}
+
+.submit_question_form_fields {
+  display: flex;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.question_input {
+  overflow: auto;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-weight: 400;
+  border-radius: 4px 0 0 4px;
+  line-height: 20px;
+  outline: none;
+  overflow-wrap: break-word;
+  padding: 8px 12px;
+  vertical-align: top;
+  width: 90%;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #005ff9;
+}
+
+.submit_button {
+  display: block;
+  color: white;
+  padding: 10px;
+  display: table-cell;
+  overflow: auto;
+  box-sizing: border-box;
+  border-radius: 0 4px 4px 0;
+  background: #005ff9;
+  margin: 0;
+  height: 40px;
+  border: none;
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  vertical-align: top;
+}
+
+.vectorizer_select {
+  display: block;
+  width: 100px;
+  height: 40px;
+  box-sizing: border-box;
+  border: none;
+  padding-left: 10px;
+  background: #f0f1f3;
+  border-radius: 4px;
+}
+
+.sample_question {
+  border-bottom: solid #f0f1f3 2px;
+  height: 60px;
+  display: flex;
+  vertical-align: middle;
+}
+
+.user_photo {
+  width: 30px;
+  height: 30px;
+  padding: 15px;
+}
+
+li {
+  list-style-type: none;
+  display: block;
+  min-height: 40px;
+}
+
+.search_time {
+  height: 40px;
+  align-content: center;
+}
