@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Корпус вопросов о любви</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+  <div class='menu_header'>
+    <img class='main_logo' src='https://img.imgsmail.ru/pkgs/otvet-static/static/i/images/svg/opt/answers_logo_web2.svg'>
+  </div>
+  <div class='main_body'>
+    <div class='submit_question'>
+      <h1 class='header_question'>Вопросы участников</h1>
+      <form class='submit_question_form'>
+        <div class='submit_question_form_fields'>
+          <input class='question_input' name="query" placeholder='Задайте свой вопрос здесь'></input>
+          <input class='submit_button' type="submit" value="Задать вопрос"></input>
+        </div>
+        <select class='vectorizer_select' name='veсtorizer'>
+          <option value='tf-idf'>TF-IDF</option>
+          <option value='bm25'>BM25</option>
+          <option value='BERT'>BERT</option>
+        </select>
+      </form>
+    </div>
+    <div>
+      <h2>{{ header }}</h2>
+        <ul>
+         {% for answer in answers %}
+         <li>{{ answer }}</li>
+         {% endfor %}
+         <br>{{ search_time }}</br>
+        </ul>
+      <div class="search_time">{{ time }}</div>
+    </div>
+    <div class='sample_questions'>
+      <div class='sample_question'>
+        <img class='user_photo' src='https://svgsilh.com/svg/2162179-9e9e9e.svg'>
+        <p class='question'>может ли простить измену парень?</p>
+      </div>
+      <div class='sample_question'>
+        <img class='user_photo' src='https://svgsilh.com/svg/2162179-9e9e9e.svg'>
+        <p class='question'>С дрожью вспоминаю У вас были случаи, когда вы переспали не пойми с кем?</p>
+      </div>
+      <div class='sample_question'>
+        <img class='user_photo' src='https://svgsilh.com/svg/2162179-9e9e9e.svg'>
+        <p class='question'>Что вы чувствуете, когда прикасаетесь своей щекой к щеке любимого человека? Вы что-то чувствуете?</p>
+      </div>
+      <div class='sample_question'>
+        <img class='user_photo' src='https://svgsilh.com/svg/2162179-9e9e9e.svg'>
+        <p class='question'>Если умрет моя жена, которую например я очень сильно люблю, с кем я буду любовью заниматься?</p>
+      </div>
+      <div class='sample_question'>
+        <img class='user_photo' src='https://svgsilh.com/svg/2162179-9e9e9e.svg'>
+        <p class='question'>что делать если я влюбилась в девочку которой 16, а самой мне 12?</p>
+      </div>
+    </div>
+  </div>
+</body>
